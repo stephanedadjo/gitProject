@@ -10,7 +10,7 @@
 const maxProfit = ( stockPriceYesterday ) =>{
 	let max = -Infinity;
 	for( let i = 0; i < stockPriceYesterday.length; i++){
-		for( let j = 1; j < stockPriceYesterday.length - 1; j++){
+		for( let j =i + 1; j < stockPriceYesterday.length - 1; j++){
 			if ( stockPriceYesterday[j] - stockPriceYesterday[i] > max ){
 				max = stockPriceYesterday[j] - stockPriceYesterday[i];
 			}
